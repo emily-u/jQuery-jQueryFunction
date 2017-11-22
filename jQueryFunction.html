@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="jQueryFunction.css">
+
+</head>
+
+<body>
+    <fieldset>	    
+    <button class="click">click</button>
+    <p id="toclick">text</p>
+	</fieldset>
+   
+    <fieldset>	    
+    <button class="hide">hide</button>
+    <p>click to hide this button</p>
+    <button class="show">show</button>
+    <p>show this button</p>
+	</fieldset>
+
+
+    <fieldset>	    
+    <button class="toggle">toggle</button>
+    <p id="showandhide">toggle between show and hide</p>
+	</fieldset>
+   
+    <fieldset>	    
+    <button class="slideDown">slideDown</button>
+    <p class="hidden" hidden>I was hidden.</p>
+	</fieldset>
+
+    <fieldset>	    
+    <button class="slideUp">slideUp</button>
+    <p id="showit">show it</p>
+	</fieldset>
+   
+    <fieldset>	    
+    <button class="slideToggle">slideToggle</button>
+    <p id="slideToggle">slideToggle</p>
+	</fieldset>
+
+    <fieldset>	    
+    <button class="fadeIn">fadeIn</button>
+    <p id="tofadeIn" hidden>fadeIn</p>
+	</fieldset>
+      
+    <fieldset>	    
+    <button class="fadeOut">fadeOut</button>
+    <p id="tofadeOut">fadeOut</p>
+	</fieldset>
+
+    <fieldset>	    
+    <button class="addClass">addClass</button>
+    <p id="green">addClass to red</p>
+	</fieldset>
+   
+    <fieldset>	    
+    <button class="before">before</button>
+    <p id="before">an hi text will add before me</p>
+	</fieldset>
+
+    <fieldset>	    
+    <button class="after">after</button>
+    <p id="after">a text after me</p>
+	</fieldset>
+   
+    <fieldset>	    
+    <button class="append">append</button>
+    <p id="append">another append text</p>
+	</fieldset>
+      
+    <fieldset>	    
+    <button class="html">html</button>
+    <p id="html">html text</p>
+	</fieldset>  
+ 
+    <fieldset>	    
+    <button class="text">text</button>
+    <p id="text">text</p>
+	</fieldset>
+
+    <fieldset>	    
+    <button class=""></button>
+    <p id="">text</p>
+	</fieldset>
+
+	
+    <script>
+        $(document).ready(function() {
+            $(".click").click(function(){
+                alert("wow!")
+            })
+            $(".hide").click(function(){
+                $(".hide").hide()
+            })
+            $(".show").click(function(){
+                $(".hide").show()
+            })
+            $(".toggle").click(function(){
+                $("#showandhide").toggle()
+            })
+            $(".slideDown").click(function(){
+                $(".hidden").slideDown()
+            })
+            $(".slideUp").click(function(){
+                $("#showit").slideUp()
+            })
+            $(".slideToggle").click(function(){
+                $("#slideToggle").slideToggle()
+            })
+            $(".fadeIn").click(function(){
+                $("#tofadeIn").fadeIn()
+            })
+            $(".fadeOut").click(function(){
+                $("#tofadeOut").fadeOut()
+            })
+            $(".addClass").click(function(){
+                $("#green").addClass("red")
+            })
+            $(".before").click(function(){
+                $("#before").before("<h1>i am a hi</h1>")
+            })
+            $(".after").click(function(){
+                $("#after").after("<h1>i am a hi</h1>")
+            })
+            $(".append").click(function(){
+                $("#append").append("<span>appended text</span>")
+            })
+            $(".html").click(function(){
+                $("#html").html("<h1>changed text</h1>")
+            })
+            $(".text").click(function(){
+                $("#text").text("hello")
+            })
+            })
+    </script>
+</body>
+</html>
